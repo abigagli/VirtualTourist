@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SIZ-bv-hrL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015 Andrea Bigagli. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="OIp-6o-L6N">
+                                <rect key="frame" x="20" y="559" width="560" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VirtualTourist" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="11e-NB-Jax">
+                                <rect key="frame" x="20" y="180" width="560" height="43"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="udacity" translatesAutoresizingMaskIntoConstraints="NO" id="7lf-R6-k02">
+                                <rect key="frame" x="172" y="254" width="256" height="256"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7lf-R6-k02" firstAttribute="top" secondItem="11e-NB-Jax" secondAttribute="bottom" constant="31" id="10U-j5-9Ht"/>
+                            <constraint firstItem="OIp-6o-L6N" firstAttribute="leading" secondItem="SIZ-bv-hrL" secondAttribute="leading" constant="20" symbolic="YES" id="AWs-hW-8Hw"/>
+                            <constraint firstItem="11e-NB-Jax" firstAttribute="leading" secondItem="SIZ-bv-hrL" secondAttribute="leading" constant="20" symbolic="YES" id="CdL-ks-KWL"/>
+                            <constraint firstItem="11e-NB-Jax" firstAttribute="centerY" secondItem="SIZ-bv-hrL" secondAttribute="bottom" multiplier="1/3" constant="1" id="R0F-tR-4t8"/>
+                            <constraint firstAttribute="centerX" secondItem="11e-NB-Jax" secondAttribute="centerX" id="SOw-B1-oIC"/>
+                            <constraint firstItem="7lf-R6-k02" firstAttribute="centerX" secondItem="SIZ-bv-hrL" secondAttribute="centerX" id="Xru-vQ-YKO"/>
+                            <constraint firstAttribute="centerX" secondItem="OIp-6o-L6N" secondAttribute="centerX" id="dEf-v6-WTa"/>
+                            <constraint firstAttribute="bottom" secondItem="OIp-6o-L6N" secondAttribute="bottom" constant="20" id="fUh-Qa-Qwy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="udacity" width="256" height="256"/>
+    </resources>
+</document>
