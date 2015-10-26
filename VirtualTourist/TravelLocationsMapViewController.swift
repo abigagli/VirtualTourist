@@ -243,16 +243,18 @@ extension TravelLocationsMapViewController: MKMapViewDelegate
         
         //Remove selection, this is just a one-tap thing...
         mapView.deselectAnnotation(view.annotation, animated: false)
+        
+        if self.deletingAnnotations {
             
-        if (self.deletingAnnotations) {
-            let currentPin = view.annotation as! Pin
-            
-            if currentPin.pendingDownloads > 0 {
-                self.alertUserWithTitle("Notice", message: "Current pin has pending downloads. Wait until completed before deleting", retryHandler: nil)
-            }
-            else {
-                self.sharedContext.deleteObject(currentPin)
-                CoreDataStackManager.sharedInstance.saveContext()
+            if let currentPin = view.annotation as? Pin {
+                
+                if currentPin.pendingDownloads > 0 {
+                    self.alertUserWithTitle("Notice", message: "Current pin has pending downloads. Wait until completed before deleting", retryHandler: nil)
+                }
+                else {
+                    self.sharedContext.deleteObject(currentPin)
+                    CoreDataStackManager.sharedInstance.saveContext()
+                }
             }
         }
         else {
